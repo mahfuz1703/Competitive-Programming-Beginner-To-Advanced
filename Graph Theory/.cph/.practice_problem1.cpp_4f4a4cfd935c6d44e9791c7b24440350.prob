@@ -1,0 +1,1 @@
+{"name":"Local: practice_problem1","url":"/home/mahfuz/Come Here/CPS Academy/Graph Theory/practice_problem1.cpp","tests":[{"id":1699988630224,"input":"5 4\n1 2\n2 3\n2 5\n5 4","output":"2\n1 3 5\n2\n5\n4 2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/mahfuz/Come Here/CPS Academy/Graph Theory/practice_problem1.cpp","group":"local","local":true}
