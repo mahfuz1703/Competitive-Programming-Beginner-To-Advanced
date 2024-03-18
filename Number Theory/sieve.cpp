@@ -5,7 +5,7 @@ const int mx = 1e6+123;
 vector <bool> isPrime(mx, 1);
 vector <int> prime;
 
-void primeGenerate(int n){
+void primeGenerate(int n){  // Time Complexity - O(nlog(n))
     isPrime[1] = 0;
 
     // all prime numbers generate from 2 - n;
