@@ -1,6 +1,8 @@
 /// In the name of ALLAH
 /// La ilaha illallahu Muhammadur Rasulullah
 
+// Problem - https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=72
+
 #include <bits/stdc++.h>
 using namespace std;
 
