@@ -2,7 +2,7 @@
 using namespace std;
 #define ll long long
 
-const int n = 100000000;
+const int n = 1e6 + 123;
 bitset <n> isPrime;
 vector <int> prime;
 
@@ -30,9 +30,27 @@ void primeGenerate(){
 int main(){
     primeGenerate();
 
-    for( auto u : prime){
-        cout << u << "\n";
+    int tt = 1;
+    cin >> tt;
+    while(tt--){
+        int num; cin >> num;
+
+        int cnt = 0;
+        for(auto u : prime){
+            if(u > num) break;;
+
+            bool oky = true;
+            while(u > 0){
+                int tmp = n % 10;
+                u /= 10;
+
+                if(tmp == 0){
+                    oky = false;
+                }
+            }
+            if(oky) cnt++;
+        }
+        cout << cnt << "\n";
     }
     return 0;
 }
-// Complexity - O(n);
