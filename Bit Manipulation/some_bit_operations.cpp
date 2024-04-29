@@ -87,6 +87,6 @@ int main(){
     // cout << multiply_by_2(100) << "\n";
     // cout << divide_by_2(100) << "\n";
     // cout << power_of_2(4) << "\n";
-    cout << check_power_of_2(16) << "\n";
+    // cout << check_power_of_2(16) << "\n";
     return 0;
 }
