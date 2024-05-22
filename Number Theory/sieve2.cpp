@@ -4,7 +4,6 @@ using namespace std;
 const int mx = 1e6+123;
 bitset <mx> isPrime;
 vector <int> prime;
-
 void primeGenerate(int n){
     isPrime[1] = 0;
     for(int i = 3; i <= n; i += 2) isPrime[i] = 1;

@@ -82,7 +82,7 @@ int main(){
     // count_on_bits(n);
     // cout << even_or_odd(n) << "\n";
     // cout << set_kTH_bit_on(11, 2) << "\n";
-    // cout << set_kTH_bit_off(15, 2) << "\n";
+    cout << set_kTH_bit_off(5, 0) << "\n";
     // cout << toggle_kTH_bit(11, 2) << "\n";
     // cout << multiply_by_2(100) << "\n";
     // cout << divide_by_2(100) << "\n";

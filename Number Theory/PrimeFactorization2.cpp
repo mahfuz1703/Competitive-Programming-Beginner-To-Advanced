@@ -3,7 +3,6 @@ using namespace std;
 
 #define ll long long
 vector <ll> primeFactors;
-
 void primeFactorization(ll n){ // Time complexity - O(sqrt(n));
     int sq = sqrt(n);
     for(int i = 2; i <= sq; i++){

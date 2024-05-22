@@ -5,7 +5,6 @@ using namespace std;
 #define mx 100001
 int arr[mx];
 int tree[mx * 3];
-
 void build(int node, int begin, int end){
     if(begin == end) {
         tree[node] = arr[begin]; // leaf node e aci
