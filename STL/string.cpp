@@ -113,12 +113,12 @@ int main ()
  
     vector<string> v;
     v.push_back( "Muhammad" );
-    v.push_back( "Nova" );
-    v.push_back( "Maslenia Mubarrat" );
+    v.push_back( "Mahfuz" );
+    v.push_back( "AI Shaker" );
     v.push_back( "CPS Academy" );
-    v.push_back( "Rashedul Alam Anik" );
-    v.push_back( "Farhan sadik Sakib" );
-    v.push_back( "Gazi Mohaimin Iqbal" );
+    v.push_back( "Rifatul Islam" );
+    v.push_back( "AK Ali Akbar" );
+    v.push_back( "Emran Hossen" );
  
     sort ( v.begin(), v.end() );
     for ( auto u : v ) cout << u << endl;
@@ -130,7 +130,7 @@ int main ()
  
     v.clear();
  
-    v = { "Shahriar", "Shahriar", "Momo", "Momo", "Sharif", "Sharif" };
+    v = { "Mahfuz", "Mahfuz", "Shaker", "Shaker", "Rifat", "Rifat" };
     int Sz = unique ( v.begin(), v.end() ) - v.begin();
  
  
@@ -161,7 +161,7 @@ int main ()
  
  
     /// Copying a substring of a string to a string
-    tmp = "Gagha Alam Gadha";
+    tmp = "Gadha Alam Gadha";
     s = "Shahriar ";
  
     copy ( tmp.begin()+6, tmp.begin()+10, back_inserter ( s ) ); /// copying "Alam substring to string s back.
