@@ -1,0 +1,31 @@
+-------When to use which containers-------
+
+Container --> When to use --> Pros --> Cons
+1. Pair --> Storing two values togethers --> Easy to use --> None for most use-cases
+
+2. Tuple --> Storing multiple values together --> Easy to use --> None for most use-cases
+
+3. Array --> Fixed size array --> Fast random access --> Fixed size, less flexible
+
+4. Vector --> Flexible size, dynamic array --> Fast random access, can push pop at the end --> None slower push/erase in the middle
+
+5. String --> Managing character --> Easy to use rich functionality --> None for most use cases
+
+6. Stack --> Last in first out(LIFO) --> Fast insertions and removals at the top --> Only top element accessible, no iterations
+
+7. Queue --> First in first out (FIFO) --> First insertions at the front, removals at the back --> Only front and back elements accessible, no iterations
+
+8. Deque --> Flexible size, dynamic array, fast at both ends --> Fast random access, fast push/pop at both end --> Not as memory efficient as vector
+
+9. Priority queue --> Fast access to the most  prority element --> Fast access to top, fast push/pop at the top --> No random access, no iteration, no random erase
+
+10. Set --> Unique elements, sorted order --> Maintains unique and sorted order in O(log n) time --> Can't access elements by index, bidectional iterations
+
+11. Multiset --> Multiple elements, sorted order --> Maintains sorted order O(log n) time --> Can't access elements by index, bidectional iterators
+
+12. Map --> Key value pairs, sorted keys --> Sorted by key, unique keys in O(log n) time --> Can't access elements by index, bidirectional iterators
+
+13. Unordered map --> key value pairs, no sorted keys --> Faster than map --> No ordering of keys, no access by index, bidirectional iterators
+
+14. Bitset --> Handle an array of bits --> Memory efficient, fast bit operations --> Fixed size at compile time
+
