@@ -12,13 +12,13 @@ public:
 	}
 };
 
-void insert_at_head(Node* &head, int value){
+void insert_at_head(Node* &head, int value){ // O(1)
 	Node *newnode = new Node(value);
 	newnode->next = head;
 	head = newnode;
 }
 
-void insert_at_tail(Node* &head, int value){
+void insert_at_tail(Node* &head, int value){ // O(n)
 	Node *newnode = new Node(value);
 
 	if(head == NULL) {
@@ -33,7 +33,18 @@ void insert_at_tail(Node* &head, int value){
 	tmp->next = newnode;
 }
 
-void insert_at_any_pos(Node* &head, int indx, int value){
+void optimize_insert_at_tail(Node* &head, Node* &tail, int value){ // O(1)
+	Node *newnode = new Node(value);
+
+	if(head == NULL) {
+		head = newnode;
+		return;
+	}
+	tail->next = newnode;
+	tail = newnode; // or tail = tail->next;
+}
+
+void insert_at_any_pos(Node* &head, int indx, int value){ // O(indx)
 	Node *newnode = new Node(value);
 	Node *tmp = head;
 	for(int i = 1; i < indx; i++){
@@ -43,7 +54,7 @@ void insert_at_any_pos(Node* &head, int indx, int value){
 	tmp->next = newnode;
 }
 
-void print(Node *head){
+void print(Node *head){ // O(n)
 	Node *tmp = head;
 	while(tmp != NULL){
 		cout << tmp->value << "\n";
