@@ -1,7 +1,9 @@
+// problem: https://www.spoj.com/problems/PT07Y/
+
 #include <bits/stdc++.h>
 using namespace std;
 
-const int mx = 112;
+const int mx = 20000;
 bool vis[mx];
 vector <int> adjList[mx];
 
@@ -23,13 +25,6 @@ int main(){
         adjList[x].push_back(y);
         adjList[y].push_back(x);
     }
-    // for(int i = 1; i <= node; i++){
-    //     cout << "Node " << i << ": ";
-    //     for(auto u : adjList[i]){
-    //         cout << u << " ";
-    //     }
-    //     cout << "\n";
-    // }
 
     int component = 0;
     for(int i = 1; i <= node; i++){
@@ -38,10 +33,8 @@ int main(){
             component++; // count total component/disconnected graph
         }
     }
-    // cout << component << "\n";
 
-    // check tree or not (easy way)
     if(component == 1 and (node-1 == edge)){
-        cout << "Tree\n";
-    }else cout << "Not Tree\n";
+        cout << "YES\n";
+    }else cout << "NO\n";
 }
