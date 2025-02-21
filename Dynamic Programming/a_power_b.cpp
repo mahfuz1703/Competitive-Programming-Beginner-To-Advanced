@@ -2,7 +2,7 @@
 using namespace std;
 
 
-int power(int a, int b){
+int power(int a, int b){ // complexity: O(logn)
     if(b == 0) return 1;
 
     if(b % 2 == 0){
