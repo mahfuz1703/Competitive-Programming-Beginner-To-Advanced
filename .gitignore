@@ -33,3 +33,8 @@
 *.out
 *.app
 *.in
+
+# input/output files
+inputf.in
+outputf.out
+contest.cpp
